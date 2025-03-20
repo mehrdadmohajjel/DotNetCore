@@ -1,6 +1,8 @@
 # DotNetCore
 
 معرفی دات نت کور و اینکه چرا باید آن را یاد بگیریم!
-1.open source
-2.Cross PlatForm
-3.Modular Architecture
+<ul>
+<li>1.open source</li>
+<li>2.Cross PlatForm</li>
+<li>3.Modular Architecture</li>
+</ul>
