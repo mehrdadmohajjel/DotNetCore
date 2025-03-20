@@ -13,4 +13,12 @@
 <li>Routing </li>
 <li> MVC Model </li>
 </ul>
+
+<h2>امنیت در Asp.net Core</h2>
+<ul>
+<li>احراز هویت </li>
+<li>محافظت در برابر حملات رایج </li>
+<li>مدیریت داده های حساس </li>
+
+</ul>
 </div>
