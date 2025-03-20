@@ -21,4 +21,14 @@
 <li>مدیریت داده های حساس </li>
 
 </ul>
+
+
+<h2>معماری های رایج ASP.netCore</h2>
+<ul>
+<li>معماری پیازی repository </li>
+<li>معماری تمیز Clean Architecutre </li>
+<li>معماری لایه ای Layerd </li>
+<li>معماری MicroService</li>
+</ul>
+
 </div>
