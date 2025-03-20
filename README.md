@@ -31,4 +31,12 @@
 <li>معماری MicroService</li>
 </ul>
 
+<h2>افزودن  اولین پروژه</h2>
+<ul>
+<li>Asp.net Core Web App(Model-View-Contorller) </li>
+<li> FrameWork: .NEt 8.0 </li>
+<li> UnCheck Https </li>
+
+</ul>
+
 </div>
