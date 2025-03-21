@@ -54,7 +54,7 @@
 <li>Add MyDbContext Class  </li>
 <li> Add Nugets: Microsoft.EntityFrameworkCore.SqlServer </li>
 <li> Add Entitis To Context </li>
-
+<li> Add ConnectionString to  appsetting.js </li>
 </ul>
 
 </div>
