@@ -56,6 +56,8 @@
 <li> Add Entitis To Context </li>
 <li> Add ConnectionString to  appsetting.js </li>
 <li> Add DbContext to services in Program.cs </li>
+<li>Add Nuget Microsoft.EntityFrameworkCore.Tools to Enable Migrations</li>
+<li> Add Migration to Create Database and Tables ==>Add-Migration</li>
 </ul>
 
 </div>
