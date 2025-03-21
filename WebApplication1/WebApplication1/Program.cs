@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using WebApplication1.Context;
+
 namespace WebApplication1
 {
     public class Program
@@ -5,6 +8,10 @@ namespace WebApplication1
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            builder.Services.AddDbContext<MyDbContext>(options =>
+            {
+                options.UseSqlServer(builder.Configuration.GetConnectionString(name: "MyConnectionString"));
+            });
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
