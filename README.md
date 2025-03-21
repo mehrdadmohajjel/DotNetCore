@@ -47,4 +47,14 @@
 
 </ul>
 
+
+
+<h2>Context </h2>
+<ul>
+<li>Add MyDbContext Class  </li>
+<li> Add Nugets: Microsoft.EntityFrameworkCore.SqlServer </li>
+
+
+</ul>
+
 </div>

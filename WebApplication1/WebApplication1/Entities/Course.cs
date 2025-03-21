@@ -5,5 +5,6 @@
         public long Id { get; set; } = Id;
         public string Name { get; set; } = Name;
         public string Description { get; set; } = Description;
+        public List<string> Tags { get; set; } = new();
     }
 }
