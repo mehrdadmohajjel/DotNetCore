@@ -39,4 +39,12 @@
 
 </ul>
 
+<h2>Context & Entities</h2>
+<ul>
+<li>Entities: Our class placed here </li>
+<li> Context: Tools To connect With DB </li>
+
+
+</ul>
+
 </div>
