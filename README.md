@@ -53,7 +53,7 @@
 <ul>
 <li>Add MyDbContext Class  </li>
 <li> Add Nugets: Microsoft.EntityFrameworkCore.SqlServer </li>
-
+<li> Add Entitis To Context </li>
 
 </ul>
 
