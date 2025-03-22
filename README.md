@@ -132,5 +132,10 @@
 هر دانش آموز یک آدرس دارد
             modelBuilder.Entity<Student>().HasOne(x => x.StudentAddress)
                 .WithOne(x=>x.Student).HasForeignKey<StudentAddress>(x=>x.StudentId);
+<b>تعیین جدول اصلی
+HasPrincipalKey </b>
+
+            modelBuilder.Entity<Student>().HasOne(x => x.StudentAddress)
+                .WithOne(x=>x.Student).HasForeignKey<StudentAddress>(x=>x.StudentId).HasPrincipalKey<Student>(x=>x.Id);
 
 </div>
