@@ -89,4 +89,11 @@
  </li>
 </ul>
 
+<h2>  OnModelCreating VS OnConfiguration</h2>
+<ul>
+<li>هنگام فراخونی چندین باره OnModelCreating از همان آبجکت قدیمی استفاده می شود یا به عبارتی نوعی cache  است</li>
+<li>OnConfiguration در هر فراخونی یک آبجکت جدید ایجاد می شود </li>
+<li> تمامی تعاریف ویژگی برای هر ستون در  OnModelCreating تعریف می شود</li>
+</ul>
+
 </div>
