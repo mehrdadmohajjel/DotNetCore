@@ -126,5 +126,7 @@
 <td>  modelBuilder.Entity<User>().Property(x => x.Mobile).IsRowVersion();</td>
 </tr>
 </table>
+<h2> 1 to Many </h2>
+            modelBuilder.Entity<Author>().HasMany(x=>x.Courses).WithOne(x=>x.Author).HasForeignKey(x=>x.AuthorId);
 
 </div>

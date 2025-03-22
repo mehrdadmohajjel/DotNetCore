@@ -13,8 +13,10 @@ namespace WebApplication1.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Course>().Property(x=>x.Name).IsRequired();
-            base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<Author>().HasKey(x => x.Id);
+            modelBuilder.Entity<Author>().HasMany(x=>x.Courses).WithOne(x=>x.Author).HasForeignKey(x=>x.AuthorId);
+
+            modelBuilder.Entity<Course>().HasKey(x => x.Id);
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
