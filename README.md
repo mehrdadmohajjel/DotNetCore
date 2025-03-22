@@ -69,5 +69,10 @@
 <li> for Column==>[Requeired(ErrorMessage="مقدار اعتبار سنجی")] </li>
 
 </ul>
+<h2>  Add Index For Table</h2>
+<ul>
+<li>    [Index(nameof(Name),nameof(Id),IsUnique =true,Name ="Multiple_Index")]
+</li>
 
+</ul>
 </div>
