@@ -95,5 +95,36 @@
 <li>OnConfiguration در هر فراخونی یک آبجکت جدید ایجاد می شود </li>
 <li> تمامی تعاریف ویژگی برای هر ستون در  OnModelCreating تعریف می شود</li>
 </ul>
+<h2> Fluent API</h2>
+<table>
+<tr>
+<td> عنوان</td>
+<td>کد </td>
+</tr>
+<tr>
+<td>Multikey </td>
+<td> modelBuilder.Entity<OBJ>().HasAlternateKey(x=>new{x.id,x.AuthorId});
+</td>
+</tr>
+<tr>
+<td> IsRequired</td>
+<td>            modelBuilder.Entity<User>().Property(x=>x.Mobile).IsRequired();
+ </td>
+</tr>
+<tr>
+<td> DefaultValue</td>
+<td>            modelBuilder.Entity<User>().Property(x=>x.Mobile).HasDefaultValueSql("GETDATE()");
+ </td>
+</tr>
+<tr>
+<td>Index </td>
+<td>             modelBuilder.Entity<User>().HasIndex(x => x.Id);
+</td>
+</tr>
+<tr>
+<td> Concurancy</td>
+<td>  modelBuilder.Entity<User>().Property(x => x.Mobile).IsRowVersion();</td>
+</tr>
+</table>
 
 </div>
