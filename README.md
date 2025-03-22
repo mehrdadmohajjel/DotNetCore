@@ -75,4 +75,18 @@
 </li>
 
 </ul>
+
+
+<h2>  Add Foregin Key</h2>
+<ul>
+<li>      public long? AuthorId { get; set; }
+        [ForeignKey(nameof(AuthorId))]
+        public Author Author { get; set; }
+
+</li>
+<li>        [InverseProperty(nameof(Author))]
+        public List<Course> Courses { get; set; }
+ </li>
+</ul>
+
 </div>

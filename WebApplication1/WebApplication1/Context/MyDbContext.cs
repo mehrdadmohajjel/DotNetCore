@@ -9,6 +9,7 @@ namespace WebApplication1.Context
     {
         //entities
         public DbSet<Course> Courses => Set<Course>(); //CRUD
+        public DbSet<Author> Authors => Set<Author>(); //CRUD
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
