@@ -58,6 +58,16 @@
 <li> Add DbContext to services in Program.cs </li>
 <li>Add Nuget Microsoft.EntityFrameworkCore.Tools to Enable Migrations</li>
 <li> Add Migration to Create Database and Tables ==>Add-Migration</li>
+<li>update-database ==> TO Create Database And Talbes</li>
+</ul>
+
+
+<h2>  Data Annotation</h2>
+<ul>
+<li>[Table ("نام جدول جهت درج در جدول")] </li>
+<li>[Table ("نام جدول جهت درج در جدول"),Schema="نام Schema"] </li>
+<li> for Column==>[Requeired(ErrorMessage="مقدار اعتبار سنجی")] </li>
+
 </ul>
 
 </div>
