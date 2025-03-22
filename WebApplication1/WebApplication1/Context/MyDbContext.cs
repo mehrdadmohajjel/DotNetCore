@@ -17,6 +17,9 @@ namespace WebApplication1.Context
             modelBuilder.Entity<Author>().HasMany(x=>x.Courses).WithOne(x=>x.Author).HasForeignKey(x=>x.AuthorId);
 
             modelBuilder.Entity<Course>().HasKey(x => x.Id);
+
+            modelBuilder.Entity<Student>().HasOne(x => x.StudentAddress)
+                .WithOne(x=>x.Student).HasForeignKey<StudentAddress>(x=>x.StudentId);
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

@@ -128,5 +128,9 @@
 </table>
 <h2> 1 to Many </h2>
             modelBuilder.Entity<Author>().HasMany(x=>x.Courses).WithOne(x=>x.Author).HasForeignKey(x=>x.AuthorId);
+<h2> 1 to 1 </h2>
+هر دانش آموز یک آدرس دارد
+            modelBuilder.Entity<Student>().HasOne(x => x.StudentAddress)
+                .WithOne(x=>x.Student).HasForeignKey<StudentAddress>(x=>x.StudentId);
 
 </div>
