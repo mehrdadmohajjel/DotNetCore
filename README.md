@@ -138,4 +138,38 @@ HasPrincipalKey </b>
             modelBuilder.Entity<Student>().HasOne(x => x.StudentAddress)
                 .WithOne(x=>x.Student).HasForeignKey<StudentAddress>(x=>x.StudentId).HasPrincipalKey<Student>(x=>x.Id);
 
+<hr/>
+
+
+
+<h2>Controller </h2>
+has Output listed below:
+<ul>
+<li> ContentResult <p> Return Html content</p> </li>
+<li>JsonResult <p> Return Json content</p> </li>
+<li> FileResult <p>A.Virtual </p> <p>B.Physical </p><p>C.File Content Result </p> </li>
+<li>Status Code Result </li>
+<li>Redirect Result</li>
+</ul>
+<p>
+<b>VirtualFileResult:</b>
+برای ارسال فایل‌هایی که در مسیر مجازی (مثل مسیرهای نسبی در پروژه) قرار دارند، استفاده می‌شود.
+این نوع نتایج با استفاده از یک مسیر مجازی به فایل اشاره می‌کند.
+~/Content/image.jpg
+</P>
+<hr/>
+<b>PhysicalFileResult:</b>
+برای ارسال فایل‌هایی که در سیستم فایل واقعی سرور قرار دارند، استفاده می‌شود.
+این نوع نتایج با استفاده از یک مسیر فیزیکی به فایل اشاره می‌کند.
+/var/www/html/Content/images/photo.p
+<hr/>
+<b>FileContentResult:</b>
+<p>
+برای ارسال محتویات یک فایل به صورت بایت‌ها استفاده می‌شود.
+این نوع نتیجه معمولاً برای فایل‌هایی که محتوا در حافظه (مثلاً بایت‌های یک تصویر یا فایل متنی) ذخیره شده‌اند، استفاده می‌شود.
+یعنی با آرایه ای از بایت کار میکند
+ازکتابخانه system.io.file.readallfile  استفاده میکنیم
+<b>byte[] byte=System.IO.File.ReadAllBytes(@"آدرس فیزیکی")
+return new FileContentResult(byte,"جنس فایل") --> application/pdf</b>
+</p>
 </div>
