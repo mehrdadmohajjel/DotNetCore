@@ -173,3 +173,13 @@ has Output listed below:
 return new FileContentResult(byte,"جنس فایل") --> application/pdf</b>
 </p>
 </div>
+<h3> Model Validation </h3>
+
+<p>Add Error to model validator </p>
+ModelState.AddModelError((objectTitle),"Error Message");
+
+<p>Check If Model Is valid Or Not </p>
+if(!ModelState.IsValid)
+{
+var erros=string.Join("\n",ModelState.Values.SelectMany(v=>v.Erros).Select(err=>err.ErrorMessage));
+}
